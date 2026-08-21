@@ -1,3 +1,16 @@
+# ============================================================================
+# Smart Coretax Error Analyzer
+# Copyright © 2026 Dedy (Dedyxbt). All Rights Reserved.
+# 
+# This software is provided for personal/internal use only.
+# Unauthorized copying, modification, or commercial distribution 
+# is strictly prohibited without written permission from the author.
+# 
+# Repository: https://github.com/Dedyxbt/smart-coretax
+# ============================================================================
+
+
+
 import streamlit as st
 import pandas as pd
 import xml.etree.ElementTree as ET
@@ -507,4 +520,10 @@ st.caption("""
 - Setiap 29 lines XML = 1 baris Excel (mulai baris 4)
 - Format: XML Line → Excel Row = 3 + ((Line - 6) // 29) + 1
 """)
+
+
+# ... (di baris paling bawah app.py) ...
+st.markdown("---")
+st.caption("© 2026 Dedy (Dedyxbt) | Smart Coretax Error Analyzer | All Rights Reserved")
+
 # python -m streamlit run app.py
